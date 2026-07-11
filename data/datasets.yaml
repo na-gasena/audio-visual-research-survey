@@ -1,0 +1,118 @@
+datasets:
+  - id: audioset
+    name: "AudioSet"
+    modality: ["audio", "video metadata"]
+    scale: "Over 2 million human-labeled 10-second YouTube sound clips; 527 audio event classes according to the official page."
+    labels: "Weak audio event labels"
+    tasks: ["audio event recognition", "audio-visual pretraining", "sound source localization"]
+    license_or_access: "YouTube IDs and official metadata; availability depends on source videos."
+    official_url: "https://research.google.com/audioset/"
+    notes_ja: "YouTube 由来の大規模弱ラベル音響イベントデータセット。動画削除により再現時の入手性が変わる。"
+  - id: vggsound
+    name: "VGGSound"
+    modality: ["video", "audio"]
+    scale: "Official page describes 200k+ video clips and 300+ audio-visual classes."
+    labels: "Audio-visual event class"
+    tasks: ["audio-visual recognition", "pretraining", "localization"]
+    license_or_access: "YouTube-derived; check official terms."
+    official_url: "https://www.robots.ox.ac.uk/~vgg/data/vggsound/"
+    notes_ja: "音と映像の意味的対応を重視して作られた大規模 AV 認識データセット。"
+  - id: ave
+    name: "AVE"
+    modality: ["video", "audio"]
+    scale: "Official GitHub/paper should be checked for exact split counts."
+    labels: "Temporal audio-visual event labels"
+    tasks: ["audio-visual event localization"]
+    license_or_access: "GitHub metadata; source video availability may vary."
+    official_url: "https://github.com/YapengTian/AVE-ECCV18"
+    notes_ja: "聞こえかつ見えるイベントの時間定位ベンチマーク。"
+  - id: music
+    name: "MUSIC"
+    modality: ["video", "audio"]
+    scale: "Unknown in this audit; used by Sound of Pixels for musical source separation."
+    labels: "Instrument/video categories and aligned audio-visual examples"
+    tasks: ["audio-visual source separation", "music understanding"]
+    license_or_access: "Check project page."
+    official_url: "http://sound-of-pixels.csail.mit.edu/"
+    notes_ja: "楽器演奏動画を中心にした AV 音源分離用データセット。正確な規模は追加確認が必要。"
+  - id: avspeech
+    name: "AVSpeech"
+    modality: ["talking-face video", "speech audio"]
+    scale: "Official project describes large-scale YouTube talking-face data; exact usable count depends on availability."
+    labels: "Talking face / speech segments"
+    tasks: ["audio-visual speech separation", "speech enhancement"]
+    license_or_access: "YouTube-derived; availability and terms should be checked."
+    official_url: "https://looking-to-listen.github.io/avspeech/"
+    notes_ja: "話者顔映像つき音声分離の代表的データセット。"
+  - id: lrs2
+    name: "LRS2"
+    modality: ["face video", "speech audio", "transcripts"]
+    scale: "Unknown here; official VGG page should be checked for current access."
+    labels: "Sentence-level transcripts"
+    tasks: ["lip reading", "audio-visual speech recognition"]
+    license_or_access: "Research access via official dataset page."
+    official_url: "https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs2.html"
+    notes_ja: "文レベル読唇・AV 音声認識データセット。"
+  - id: lrs3
+    name: "LRS3-TED"
+    modality: ["face video", "speech audio", "transcripts"]
+    scale: "Unknown here; official page should be checked for current access."
+    labels: "Sentence-level transcripts"
+    tasks: ["lip reading", "audio-visual speech recognition", "self-supervised AV speech"]
+    license_or_access: "Research access via official dataset page."
+    official_url: "https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrs3.html"
+    notes_ja: "TED/TEDx 由来の文レベル読唇・AV 音声データセット。"
+  - id: lrw
+    name: "LRW"
+    modality: ["face video", "speech audio"]
+    scale: "Official VGG page should be checked for exact current metadata."
+    labels: "Word labels"
+    tasks: ["word-level lip reading"]
+    license_or_access: "Research access via official dataset page."
+    official_url: "https://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrw1.html"
+    notes_ja: "野外環境に近い単語レベル読唇データセット。"
+  - id: grid
+    name: "GRID"
+    modality: ["face video", "speech audio", "transcripts"]
+    scale: "Controlled corpus; exact count should be checked from official source."
+    labels: "Structured sentence transcripts"
+    tasks: ["lip reading", "audio-visual speech recognition"]
+    license_or_access: "Academic corpus terms."
+    official_url: "https://spandh.dcs.shef.ac.uk/gridcorpus/"
+    notes_ja: "制御環境の AV 音声・読唇コーパス。"
+  - id: voxceleb
+    name: "VoxCeleb"
+    modality: ["face video", "speech audio"]
+    scale: "Large-scale speaker recognition dataset; exact version counts should be checked."
+    labels: "Speaker identity"
+    tasks: ["speaker recognition", "audio-visual speech", "talking-face analysis"]
+    license_or_access: "Official dataset terms."
+    official_url: "https://www.robots.ox.ac.uk/~vgg/data/voxceleb/"
+    notes_ja: "インタビュー動画由来の話者認識データセットで、AV 音声研究にも利用される。"
+  - id: avsbench
+    name: "AVSBench"
+    modality: ["video", "audio", "segmentation masks"]
+    scale: "Official GitHub/paper should be checked for exact counts."
+    labels: "Pixel-level sounding-object masks"
+    tasks: ["audio-visual segmentation"]
+    license_or_access: "GitHub/project terms."
+    official_url: "https://github.com/OpenNLPLab/AVSBench"
+    notes_ja: "音を出す物体のピクセル単位セグメンテーションベンチマーク。"
+  - id: music-avqa
+    name: "MUSIC-AVQA"
+    modality: ["music video", "audio", "question-answer text"]
+    scale: "Official project/paper should be checked for exact count."
+    labels: "Question-answer pairs"
+    tasks: ["audio-visual question answering", "music reasoning"]
+    license_or_access: "Project terms."
+    official_url: "https://gewu-lab.github.io/MUSIC-AVQA/"
+    notes_ja: "音楽動画を対象とする AV 質問応答データセット。"
+  - id: avsd
+    name: "AVSD"
+    modality: ["video", "audio", "dialogue text"]
+    scale: "DSTC challenge versions vary; exact split should be tracked per paper."
+    labels: "Dialogue turns / responses"
+    tasks: ["audio-visual dialogue", "multimodal response generation"]
+    license_or_access: "Challenge repository terms."
+    official_url: "https://github.com/hudaAlamri/DSTC7-Audio-Visual-Scene-Aware-Dialog-AVSD-Challenge"
+    notes_ja: "音響・視覚シーンに接地した対話ベンチマーク。"

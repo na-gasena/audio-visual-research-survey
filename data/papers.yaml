@@ -1,0 +1,237 @@
+papers:
+  - id: deep-av-learning-survey-2020
+    title: "Deep Audio-Visual Learning: A Survey"
+    year: 2020
+    venue: "arXiv"
+    task_categories: ["survey", "representation-learning", "localization", "separation", "generation"]
+    inputs: ["literature"]
+    outputs: ["taxonomy", "dataset summary", "metric summary"]
+    datasets: ["multiple"]
+    methods: ["survey"]
+    contribution_en: "Surveys deep audio-visual learning and organizes the field into separation/localization, correspondence, generation, and representation learning."
+    contribution_ja: "深層 Audio-Visual 学習を概観し、分離/定位、対応、生成、表現学習に整理したサーベイ。"
+    limitations: "Predates many 2022-2026 developments such as AV-HuBERT, AVSBench follow-up work, and audio-capable foundation models."
+    urls:
+      paper: "https://arxiv.org/abs/2001.04758"
+    bibtex_key: "zhu2020deep"
+  - id: avs-survey-2025
+    title: "From Waveforms to Pixels: A Survey on Audio-Visual Segmentation"
+    year: 2025
+    venue: "arXiv"
+    task_categories: ["survey", "audio-visual-segmentation"]
+    inputs: ["literature"]
+    outputs: ["taxonomy", "benchmark summary", "method comparison"]
+    datasets: ["AVSBench"]
+    methods: ["survey"]
+    contribution_en: "Surveys audio-visual segmentation problem formulation, datasets, metrics, fusion methods, decoders, and training paradigms."
+    contribution_ja: "AV セグメンテーションの問題設定、データセット、評価指標、融合手法、デコーダ、訓練パラダイムを整理したサーベイ。"
+    limitations: "arXiv preprint status should be checked before citing as peer-reviewed."
+    urls:
+      paper: "https://arxiv.org/abs/2508.03724"
+    bibtex_key: "li2025waveforms"
+  - id: soundnet-2016
+    title: "SoundNet: Learning Sound Representations from Unlabeled Video"
+    year: 2016
+    venue: "NeurIPS"
+    task_categories: ["representation-learning", "cross-modal-distillation"]
+    inputs: ["audio", "video"]
+    outputs: ["audio representation", "transferred labels"]
+    datasets: ["unlabeled-video", "Flickr-SoundNet"]
+    methods: ["teacher-student learning", "cross-modal supervision"]
+    contribution_en: "Shows that unlabeled video can supervise audio representation learning through visual recognition models."
+    contribution_ja: "視覚認識モデルを教師として、ラベルなし動画から音響表現を学習できることを示した。"
+    limitations: "Visual-teacher bias; details of reusable dataset availability vary."
+    urls:
+      paper: "https://proceedings.neurips.cc/paper/2016/hash/c8b783b9d2a80d9efb035a4d3b31fbbe-Abstract.html"
+      project: "https://soundnet.csail.mit.edu/"
+    bibtex_key: "aytar2016soundnet"
+  - id: look-listen-learn-2017
+    title: "Look, Listen and Learn"
+    year: 2017
+    venue: "ICCV"
+    task_categories: ["representation-learning", "audio-visual-correspondence"]
+    inputs: ["audio", "video"]
+    outputs: ["correspondence score", "representation"]
+    datasets: ["AudioSet", "Kinetics/YouTube-style video"]
+    methods: ["self-supervised learning", "audio-visual correspondence"]
+    contribution_en: "Uses whether audio and video match as a self-supervised signal for transferable representations."
+    contribution_ja: "音と映像が対応するかを自己教師信号として用い、転移可能な表現を学習した。"
+    limitations: "May exploit shortcuts or synchronization artifacts."
+    urls:
+      paper: "https://openaccess.thecvf.com/content_ICCV_2017/html/Arandjelovic_Look_Listen_and_ICCV_2017_paper.html"
+      project: "https://www.robots.ox.ac.uk/~vgg/research/looklistenlearn/"
+    bibtex_key: "arandjelovic2017look"
+  - id: audio-visual-correspondence-2016
+    title: "Learning Audio-Visual Correspondence from Video"
+    year: 2016
+    venue: "ECCV"
+    task_categories: ["representation-learning", "audio-visual-correspondence"]
+    inputs: ["audio", "video frames"]
+    outputs: ["match/non-match prediction", "representation"]
+    datasets: ["self-collected video"]
+    methods: ["self-supervised learning", "two-stream networks"]
+    contribution_en: "Early work formalizing audio-visual correspondence as a learning signal."
+    contribution_ja: "音響・視覚対応を学習信号として定式化した初期研究。"
+    limitations: "Dataset and scale are smaller than later web-scale benchmarks."
+    urls:
+      paper: "https://www.robots.ox.ac.uk/~vgg/publications/2016/Owens16/owens16.pdf"
+    bibtex_key: "owens2016audio"
+  - id: audioset-2017
+    title: "Audio Set: An ontology and human-labeled dataset for audio events"
+    year: 2017
+    venue: "ICASSP"
+    task_categories: ["dataset", "audio-event-recognition"]
+    inputs: ["YouTube video audio"]
+    outputs: ["weak audio event labels"]
+    datasets: ["AudioSet"]
+    methods: ["ontology design", "human labeling"]
+    contribution_en: "Introduces a large-scale weakly labeled audio event dataset and ontology."
+    contribution_ja: "大規模弱ラベル音響イベントデータセットとオントロジーを導入した。"
+    limitations: "Weak labels; YouTube availability can change."
+    urls:
+      paper: "https://research.google/pubs/audio-set-an-ontology-and-human-labeled-dataset-for-audio-events/"
+      dataset: "https://research.google.com/audioset/"
+    bibtex_key: "gemmeke2017audio"
+  - id: ave-2018
+    title: "Audio-Visual Event Localization in Unconstrained Videos"
+    year: 2018
+    venue: "ECCV"
+    task_categories: ["event-localization", "temporal-grounding"]
+    inputs: ["video", "audio"]
+    outputs: ["temporal audio-visual event labels"]
+    datasets: ["AVE"]
+    methods: ["audio-visual fusion", "temporal localization"]
+    contribution_en: "Introduces the AVE benchmark and task for localizing events that are both audible and visible."
+    contribution_ja: "聞こえかつ見えるイベントを時間方向に定位する AVE ベンチマークを導入した。"
+    limitations: "Smaller benchmark; not pixel-level."
+    urls:
+      paper: "https://openaccess.thecvf.com/content_ECCV_2018/html/Yapeng_Tian_Audio-Visual_Event_Localization_ECCV_2018_paper.html"
+      dataset: "https://github.com/YapengTian/AVE-ECCV18"
+    bibtex_key: "tian2018audio"
+  - id: sound-of-pixels-2018
+    title: "The Sound of Pixels"
+    year: 2018
+    venue: "ECCV"
+    task_categories: ["source-separation", "visual-sound-localization"]
+    inputs: ["video", "mixed audio"]
+    outputs: ["separated audio sources", "source localization"]
+    datasets: ["MUSIC"]
+    methods: ["audio-visual source separation", "spectrogram masking"]
+    contribution_en: "Uses visual appearance and motion to separate sounds from videos."
+    contribution_ja: "映像の見た目と動きを用いて動画内の音源を分離した。"
+    limitations: "Requires visual evidence of the source; mixture assumptions affect results."
+    urls:
+      paper: "https://openaccess.thecvf.com/content_ECCV_2018/html/Hang_Zhao_The_Sound_of_ECCV_2018_paper.html"
+      project: "http://sound-of-pixels.csail.mit.edu/"
+    bibtex_key: "zhao2018sound"
+  - id: objects-that-sound-2018
+    title: "Objects that Sound"
+    year: 2018
+    venue: "ECCV"
+    task_categories: ["visual-sound-localization", "source-separation"]
+    inputs: ["image/video", "audio"]
+    outputs: ["sounding-object localization", "separated audio"]
+    datasets: ["Flickr-SoundNet", "AudioSet"]
+    methods: ["cross-modal attention", "weak supervision"]
+    contribution_en: "Studies localization and separation of sounding objects using audio as a cue."
+    contribution_ja: "音を手がかりとして、音を出す物体の定位と分離を扱った。"
+    limitations: "Precise grounding is hard under weak supervision and multiple sources."
+    urls:
+      paper: "https://openaccess.thecvf.com/content_ECCV_2018/html/Relja_Arandjelovic_Objects_that_Sound_ECCV_2018_paper.html"
+    bibtex_key: "arandjelovic2018objects"
+  - id: looking-to-listen-2018
+    title: "Looking to Listen at the Cocktail Party"
+    year: 2018
+    venue: "SIGGRAPH / ACM TOG"
+    task_categories: ["speech-separation", "audio-visual-speech"]
+    inputs: ["mixed speech audio", "speaker face video"]
+    outputs: ["target separated speech"]
+    datasets: ["AVSpeech"]
+    methods: ["face-conditioned speech separation", "spectrogram masking"]
+    contribution_en: "Separates a target speaker by conditioning on visual face information."
+    contribution_ja: "話者の顔映像を条件として、混合音から対象話者音声を分離した。"
+    limitations: "Assumes visible target face; occlusion and off-screen speech are difficult."
+    urls:
+      project: "https://looking-to-listen.github.io/"
+      paper: "https://dl.acm.org/doi/10.1145/3197517.3201357"
+    bibtex_key: "ephrat2018looking"
+  - id: vggsound-2020
+    title: "VGGSound: A Large-scale Audio-Visual Dataset"
+    year: 2020
+    venue: "ICASSP"
+    task_categories: ["dataset", "audio-visual-recognition"]
+    inputs: ["YouTube video", "audio"]
+    outputs: ["audio-visual class labels"]
+    datasets: ["VGGSound"]
+    methods: ["dataset construction", "audio-visual classification"]
+    contribution_en: "Provides a curated large-scale audio-visual recognition dataset with semantically aligned audio and vision."
+    contribution_ja: "音と映像の意味的対応を重視した大規模 AV 認識データセットを提供した。"
+    limitations: "YouTube availability and class balance require checking."
+    urls:
+      project: "https://www.robots.ox.ac.uk/~vgg/data/vggsound/"
+      paper: "https://arxiv.org/abs/2004.14368"
+    bibtex_key: "chen2020vggsound"
+  - id: avhubert-2022
+    title: "AV-HuBERT: Self-Supervised Learning of Audio-Visual Speech Representations"
+    year: 2022
+    venue: "NeurIPS"
+    task_categories: ["self-supervised-learning", "audio-visual-speech"]
+    inputs: ["speech audio", "lip-region video"]
+    outputs: ["speech representation", "speech recognition"]
+    datasets: ["LRS3", "LRS2"]
+    methods: ["masked prediction", "hidden-unit clustering", "transformer"]
+    contribution_en: "Introduces self-supervised hidden-unit prediction for audio-visual speech representations."
+    contribution_ja: "AV 音声表現向けに、自己教師あり隠れ単位予測を導入した。"
+    limitations: "Focused on speech/talking faces rather than general AV events."
+    urls:
+      paper: "https://proceedings.neurips.cc/paper_files/paper/2022/hash/17c5709671e9a6b4b2b84617f4f80b75-Abstract-Conference.html"
+      code: "https://github.com/facebookresearch/av_hubert"
+    bibtex_key: "shi2022avhubert"
+  - id: avsbench-2022
+    title: "Audio-Visual Segmentation"
+    year: 2022
+    venue: "ECCV"
+    task_categories: ["audio-visual-segmentation", "pixel-grounding"]
+    inputs: ["video", "audio"]
+    outputs: ["pixel-level sounding-object masks"]
+    datasets: ["AVSBench"]
+    methods: ["cross-modal fusion", "segmentation"]
+    contribution_en: "Introduces pixel-level audio-visual segmentation and the AVSBench benchmark."
+    contribution_ja: "ピクセル単位 AV セグメンテーションと AVSBench ベンチマークを導入した。"
+    limitations: "Segmentation annotations are costly; domain coverage is limited by benchmark construction."
+    urls:
+      paper: "https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/5214_ECCV_2022_paper.php"
+      dataset: "https://github.com/OpenNLPLab/AVSBench"
+    bibtex_key: "zhou2022audio"
+  - id: music-avqa-2022
+    title: "MUSIC-AVQA: A Dataset for Audio-Visual Question Answering on Videos"
+    year: 2022
+    venue: "ACM Multimedia"
+    task_categories: ["audio-visual-question-answering", "music-understanding"]
+    inputs: ["music performance video", "audio", "question text"]
+    outputs: ["answer"]
+    datasets: ["MUSIC-AVQA"]
+    methods: ["audio-visual-language reasoning", "question answering"]
+    contribution_en: "Introduces an audio-visual QA dataset focused on music videos."
+    contribution_ja: "音楽動画に焦点を当てた AV 質問応答データセットを導入した。"
+    limitations: "Domain-specific; text priors and modality ablations should be checked."
+    urls:
+      paper: "https://arxiv.org/abs/2203.14058"
+      project: "https://gewu-lab.github.io/MUSIC-AVQA/"
+    bibtex_key: "li2022music"
+  - id: avsd-2019
+    title: "Audio Visual Scene-Aware Dialog"
+    year: 2019
+    venue: "CVPR Workshop / DSTC7"
+    task_categories: ["audio-visual-dialogue", "language"]
+    inputs: ["video", "audio", "dialogue history", "question"]
+    outputs: ["dialogue response"]
+    datasets: ["AVSD"]
+    methods: ["multimodal dialogue", "response generation"]
+    contribution_en: "Introduces a task and benchmark for dialogue grounded in audio-visual scenes."
+    contribution_ja: "音響・視覚シーンに接地した対話タスクとベンチマークを導入した。"
+    limitations: "Workshop/shared-task lineage; exact dataset versions should be tracked."
+    urls:
+      paper: "https://arxiv.org/abs/1901.09107"
+      dataset: "https://github.com/hudaAlamri/DSTC7-Audio-Visual-Scene-Aware-Dialog-AVSD-Challenge"
+    bibtex_key: "alamri2019audio"
