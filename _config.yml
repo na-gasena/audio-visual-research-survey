@@ -1,0 +1,14 @@
+﻿title: Audio-Visual Research Survey
+description: A bilingual survey of audio-visual research, datasets, venues, and audiovisual artworks.
+markdown: kramdown
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+  - audit-report.md
+  - papers
+  - data
+  - references.bib
