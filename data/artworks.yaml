@@ -1,0 +1,107 @@
+artworks:
+  - id: fischinger-optical-poem-1938
+    title: "An Optical Poem"
+    artist: "Oskar Fischinger"
+    year: 1938
+    form: ["abstract film", "visual music"]
+    audio_visual_relation_ja: "音楽のリズムや構造を、抽象的な形態と運動へ対応させる視覚音楽。"
+    audio_visual_relation_en: "Visual music that maps musical rhythm and structure into abstract form and motion."
+    why_important_ja: "映画・アニメーションにおける視覚音楽の代表例。後のミュージックビデオ、モーショングラフィックス、音楽可視化の前史として重要。"
+    why_important_en: "A canonical example of visual music in film and animation, important as a precursor to music video, motion graphics, and music visualization."
+    source_urls:
+      - "https://www.oskarfischinger.org/"
+      - "https://en.wikipedia.org/wiki/Oskar_Fischinger"
+  - id: bute-seeing-sound-1930s-1950s
+    title: "Seeing Sound series"
+    artist: "Mary Ellen Bute"
+    year: "1934-1953"
+    form: ["abstract film", "visual music", "electronic imagery"]
+    audio_visual_relation_ja: "音楽を、抽象アニメーション、色彩、電子的映像として見る経験へ変換する。"
+    audio_visual_relation_en: "Transforms music into abstract animation, color, and electronic imagery."
+    why_important_ja: "女性実験映画作家による初期の視覚音楽実践として重要。映画館で上映された抽象音楽映画でもある。"
+    why_important_en: "Important early visual music practice by a woman experimental filmmaker, including abstract musical films shown in theaters."
+    source_urls:
+      - "https://en.wikipedia.org/wiki/Mary_Ellen_Bute"
+      - "http://www.centerforvisualmusic.org/Bute.htm"
+  - id: paik-tv-buddha-1974
+    title: "TV Buddha"
+    artist: "Nam June Paik"
+    year: 1974
+    form: ["video installation", "closed-circuit installation"]
+    audio_visual_relation_ja: "映像フィードバックと彫刻的配置により、テレビ、自己観察、時間性を作品化する。音は中心ではないが、ビデオアート/メディアアート史の基盤として AV 作品理解に重要。"
+    audio_visual_relation_en: "Uses video feedback and sculptural staging to make television, self-observation, and temporality into the artwork. Sound is not central, but it is foundational for AV/media art history."
+    why_important_ja: "ビデオアートとメディアインスタレーションの古典。Audio-Visual 作品を、認識タスクではなく経験・装置・空間として見る入口になる。"
+    why_important_en: "A classic of video art and media installation, useful for understanding audiovisual work as experience, apparatus, and space rather than recognition task."
+    source_urls:
+      - "https://en.wikipedia.org/wiki/TV_Buddha"
+      - "https://en.wikipedia.org/wiki/Nam_June_Paik"
+  - id: dumb-type-sn-1994
+    title: "S/N"
+    artist: "Dumb Type"
+    year: 1994
+    form: ["performance", "multimedia theater", "audiovisual performance"]
+    audio_visual_relation_ja: "身体、音、映像、テキスト、照明、舞台機構を同期・衝突させ、社会的テーマを扱う舞台作品。"
+    audio_visual_relation_en: "A stage work that synchronizes and collides body, sound, image, text, lighting, and stage machinery around social themes."
+    why_important_ja: "日本のメディアアート/パフォーマンスにおける重要集団 Dumb Type の代表作。研究論文側の AV とは異なる、批評的・舞台的 AV の軸を示す。"
+    why_important_en: "A representative work by Dumb Type, a key Japanese media art/performance collective, showing a critical and theatrical AV lineage."
+    source_urls:
+      - "http://www.dumbtype.com/"
+      - "https://en.wikipedia.org/wiki/Shiro_Takatani"
+  - id: viola-the-crossing-1996
+    title: "The Crossing"
+    artist: "Bill Viola"
+    year: 1996
+    form: ["video installation", "sound installation"]
+    audio_visual_relation_ja: "大画面映像、スローモーション、音響環境を用いて、身体、火、水、消滅、変容を没入的に経験させる。"
+    audio_visual_relation_en: "Uses large-scale video, slow motion, and sound environment to create an immersive experience of body, fire, water, disappearance, and transformation."
+    why_important_ja: "ビデオ/サウンドインスタレーションにおける没入型作品の代表例。空間内での映像と音の時間経験が中心。"
+    why_important_en: "A representative immersive video/sound installation centered on temporal experience of image and sound in space."
+    source_urls:
+      - "https://en.wikipedia.org/wiki/Bill_Viola"
+  - id: ikeda-datamatics-2006
+    title: "datamatics"
+    artist: "Ryoji Ikeda"
+    year: "2006-"
+    form: ["audiovisual concert", "installation", "data art"]
+    audio_visual_relation_ja: "データ、数値、ノイズ、電子音、白黒の高密度映像を同期させ、情報そのものを知覚経験に変換する。"
+    audio_visual_relation_en: "Synchronizes data, numbers, noise, electronic sound, and dense black-and-white imagery to turn information itself into perceptual experience."
+    why_important_ja: "現代の AV ライブ、データアート、ミニマル電子音響を結ぶ代表的作品系列。"
+    why_important_en: "A representative series connecting contemporary AV live performance, data art, and minimal electronic sound."
+    source_urls:
+      - "https://www.ryojiikeda.com/"
+      - "https://en.wikipedia.org/wiki/Ryoji_Ikeda"
+  - id: ikeda-spectra-2004
+    title: "spectra"
+    artist: "Ryoji Ikeda"
+    year: "2004-"
+    form: ["light installation", "sound installation", "site-specific work"]
+    audio_visual_relation_ja: "強い白色光と数学的/電子的な音響を、都市や場所に応じたスケールで構成する。"
+    audio_visual_relation_en: "Composes intense white light and mathematical/electronic sound at site-specific urban or architectural scale."
+    why_important_ja: "音と光を空間的・都市的スケールで扱う作品。スクリーン中心ではない AV 作品の例。"
+    why_important_en: "An example of AV work at spatial and urban scale, not centered on a screen."
+    source_urls:
+      - "https://en.wikipedia.org/wiki/Spectra_(installation)"
+      - "https://www.ryojiikeda.com/"
+  - id: uva-momentum-2013
+    title: "Momentum"
+    artist: "United Visual Artists"
+    year: 2013
+    form: ["kinetic installation", "light installation", "sound installation"]
+    audio_visual_relation_ja: "光、音、運動する振り子状要素を用いて、ギャラリー空間を時間的・身体的に経験する装置へ変える。"
+    audio_visual_relation_en: "Uses light, sound, and moving pendulum-like elements to turn the gallery into a temporal and bodily instrument."
+    why_important_ja: "鑑賞者の移動、空間、光、音を統合する現代的な没入型 AV インスタレーションの例。"
+    why_important_en: "A contemporary immersive AV installation integrating visitor movement, space, light, and sound."
+    source_urls:
+      - "https://en.wikipedia.org/wiki/United_Visual_Artists"
+  - id: anadol-machine-hallucinations-2019
+    title: "Machine Hallucinations"
+    artist: "Refik Anadol"
+    year: "2019-"
+    form: ["immersive installation", "AI art", "data sculpture"]
+    audio_visual_relation_ja: "大量の画像・都市データ・音響データを機械学習で処理し、没入的な映像・音響環境として提示する。"
+    audio_visual_relation_en: "Processes large image, urban, and audio datasets with machine learning and presents them as immersive image-sound environments."
+    why_important_ja: "機械学習が作品制作側にも入ってきた例。研究側の ML と作品側の AV が交差する地点として重要。"
+    why_important_en: "An example where machine learning enters artistic production, linking ML research and AV artwork."
+    source_urls:
+      - "https://refikanadol.com/"
+      - "https://en.wikipedia.org/wiki/Refik_Anadol"

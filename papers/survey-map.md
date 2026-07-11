@@ -47,6 +47,14 @@ The core question is how audio-visual perception can support natural-language re
 この領域のベンチマークは、認識や音声タスクほど標準化されていません。タスク特化で小規模なデータセットも多く、モダリティ別のアブレーション確認が重要です。  
 Benchmarks here are less standardized than recognition or speech tasks. Many datasets are task-specific and sometimes small, making modality ablations important.
 
+### 6. オーディオビジュアル作品 / Audiovisual Works
+
+作品としての Audio-Visual は、音と映像を入力データとして処理するだけでなく、知覚、身体、空間、時間、社会的意味を構成する媒体として扱います。視覚音楽、ビデオアート、ライブシネマ、VJ、メディアインスタレーション、AV パフォーマンス、AI/data art が含まれます。  
+Audiovisual works treat sound and image not only as input data, but as media for perception, body, space, time, and social meaning. This includes visual music, video art, live cinema, VJing, media installation, AV performance, and AI/data art.
+
+このカテゴリの詳細は [audiovisual-works.md](audiovisual-works.md) に分けました。  
+Details are separated into [audiovisual-works.md](audiovisual-works.md).
+
 ## 横断軸 / Cross-Cutting Axes
 
 | 軸 | 観察された値 | Values observed |
@@ -55,6 +63,7 @@ Benchmarks here are less standardized than recognition or speech tasks. Many dat
 | 同期の強さ | 同期、弱同期、弱ペア、不対応 | synchronized, loosely synchronized, weakly paired, unpaired |
 | 出力粒度 | クリップラベル、時間区間、空間ヒートマップ、ピクセルマスク、波形、テキスト | clip label, temporal segment, spatial heatmap, pixel mask, waveform, text |
 | モダリティの役割 | 音をラベルにする、音をクエリにする、視覚を分離器にする、視覚を文脈にする、言語をインターフェースにする | audio as label, audio as query, vision as separator, vision as context, language as interface |
+| 作品側の関係 | 同期、対位法、相互変換、フィードバック、没入環境、ライブ生成 | synchronization, counterpoint, translation, feedback, immersive environment, live generation |
 
 ## 推奨読書順 / Reading Order
 

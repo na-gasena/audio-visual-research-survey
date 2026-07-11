@@ -24,9 +24,10 @@ Audio-visual research treats video, waveforms, spectrograms, speech, music, even
 | AV 質問応答・対話 | Audio-visual question answering and dialogue | 映像 + 音 + テキスト -> 回答、応答 | AVSD, MUSIC-AVQA, AVQA |
 | AV 生成・同期 | Audio-visual generation and synchronization | 映像/音/テキスト条件 -> 生成音・生成映像・同期スコア | LRS2/LRS3, VoxCeleb, AVSpeech |
 | 音楽・感情・人間中心理解 | Music, affect, and human-centered AV understanding | 演奏/顔/身体/音 -> ラベル、感情、楽器 | MUSIC, VoxCeleb, CMU-MOSEI |
+| オーディオビジュアル作品 | Audiovisual artworks and performance | 音 + 映像 + 空間 + 身体 -> 鑑賞経験、展示、ライブ | 作品メタデータは data/artworks.yaml |
 
-研究の全体地図は [papers/survey-map.md](papers/survey-map.md)、論文メタデータは [data/papers.yaml](data/papers.yaml) にあります。  
-The research map is in [papers/survey-map.md](papers/survey-map.md), and structured paper metadata is in [data/papers.yaml](data/papers.yaml).
+研究の全体地図は [papers/survey-map.md](papers/survey-map.md)、論文メタデータは [data/papers.yaml](data/papers.yaml)、作品メタデータは [data/artworks.yaml](data/artworks.yaml) にあります。  
+The research map is in [papers/survey-map.md](papers/survey-map.md), structured paper metadata is in [data/papers.yaml](data/papers.yaml), and artwork metadata is in [data/artworks.yaml](data/artworks.yaml).
 
 ## 主要会議・ジャーナル / Major Venues
 
@@ -66,6 +67,8 @@ Details are listed in [data/venues.yaml](data/venues.yaml).
   A pixel-level audio-visual segmentation benchmark.
 - **MUSIC-AVQA / AVSD**: AV 質問応答・対話の代表的ベンチマーク。  
   Representative benchmarks for audio-visual QA and dialogue.
+- **Visual music / video art / live audiovisual performance**: Oskar Fischinger、Mary Ellen Bute、Nam June Paik、Dumb Type、Bill Viola、Ryoji Ikeda などの作品系列。  
+  Artistic lineages including visual music, video art, live audiovisual performance, and immersive installation.
 
 ## リポジトリ構成 / Repository Structure
 
@@ -83,13 +86,14 @@ papers/
   speech-and-lip-reading.md
   event-understanding-and-segmentation.md
   qa-dialogue-and-generation.md
+  audiovisual-works.md
 audit-report.md
 ```
 
 ## YAML ファイルの役割 / Why YAML Files Exist
 
-`data/*.yaml` は、人間が読む本文とは別に、論文・データセット・会議の情報を機械処理しやすい形で保存するためのファイルです。README やトピックページは「読むため」の文書、YAML は「再利用するため」のデータです。キー名はスクリプト処理しやすいように英語で統一していますが、説明文には日本語項目を含めています。  
-The `data/*.yaml` files store papers, datasets, and venues as reusable structured data. Markdown files are for reading; YAML files are for processing. Field names are kept in English for scripting, while Japanese descriptions are included where useful.
+`data/*.yaml` は、人間が読む本文とは別に、論文・データセット・会議・作品の情報を機械処理しやすい形で保存するためのファイルです。README やトピックページは「読むため」の文書、YAML は「再利用するため」のデータです。キー名はスクリプト処理しやすいように英語で統一していますが、説明文には日本語項目を含めています。  
+The `data/*.yaml` files store papers, datasets, venues, and artworks as reusable structured data. Markdown files are for reading; YAML files are for processing. Field names are kept in English for scripting, while Japanese descriptions are included where useful.
 
 たとえば、YAML があると次のような使い方ができます。  
 For example, YAML enables:

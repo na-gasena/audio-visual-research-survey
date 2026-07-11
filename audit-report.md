@@ -33,6 +33,8 @@
   Robotics, embodied AV navigation, AV saliency, affective computing, and medical/assistive AV work are underrepresented.
 - 非英語文献と日本語の AV 研究は網羅的には検索していません。  
   Non-English literature and Japanese-language AV research were not comprehensively searched.
+- 作品サーベイは追加したばかりで、視覚音楽、ビデオアート、VJ、ライブシネマ、メディアアート史をまだ網羅していません。  
+  The works survey was newly added and is not yet comprehensive across visual music, video art, VJing, live cinema, and media art history.
 
 ## 重要だが未追加の可能性がある研究系列 / Potentially Missing Important Lines
 
@@ -50,6 +52,8 @@
   Foley/video-to-audio generation and synchronization metrics.
 - 音、映像、言語を同時に扱う汎用マルチモーダルエンコーダ。  
   Universal multimodal encoders that include audio, vision, and language.
+- オーディオビジュアル作品史: visual music、expanded cinema、live cinema、VJ culture、日本のメディアアート。  
+  Audiovisual artwork history: visual music, expanded cinema, live cinema, VJ culture, and Japanese media art.
 
 ## バイアス監査 / Bias Audit
 
@@ -94,3 +98,5 @@ These categories overlap. For example, Looking to Listen belongs to both speech 
    Add scripts for generating README tables from YAML.
 5. active speaker detection、AV retrieval、embodied AV navigation、affect、generation の個別ページを追加する。  
    Add topic pages for active speaker detection, AV retrieval, embodied AV navigation, affect, and generation.
+6. 作品サーベイについて、一次資料、展覧会カタログ、美術館ページ、作家公式ページから作品情報を増やす。  
+   Expand the works survey from primary materials, exhibition catalogues, museum pages, and artist/project pages.
